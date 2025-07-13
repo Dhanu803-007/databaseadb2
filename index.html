@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fun Friend Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .form-container {
+      max-width: 500px;
+      margin: auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Friends Fun Data Collection</h2>
+
+    <form method="POST" action="https://script.google.com/macros/s/AKfycbw-MsYMHxk3HmEQvh462nlfS6aFYRQxNdsUai7RG2hk7flGeSKmmX2C3vu1CCaQjXC4EA/exec">
+
+      <label>What’s your all-time favorite song?</label>
+      <input type="text" name="favorite_song">
+
+      <label>What's your comfort food?</label>
+      <input type="text" name="comfort_food">
+
+      <label>Favorite subject in school/college:</label>
+      <select name="fav_subject">
+        <option value="disabled selected hidden"></option>
+        <option>Math</option>
+        <option>Science</option>
+        <option>English</option>
+        <option>Computer</option>
+        <option>History</option>
+        <option>Other</option>
+      </select>
+
+      <label>Least favorite subject:</label>
+      <select name="least_subject">
+        <option value="disabled selected hidden"></option>
+        <option>Math</option>
+        <option>Science</option>
+        <option>English</option>
+        <option>Computer</option>
+        <option>History</option>
+        <option>Other</option>
+      </select>
+
+      <label>Which season do you love most?</label>
+      <select name="fav_season">
+        <option value="disabled selected hidden"></option>
+        <option>Summer</option>
+        <option>Rainy</option>
+        <option>Winter</option>
+        <option>Spring</option>
+      </select>
+
+      <label>Are you a book, movie, or game person?</label>
+      <select name="personality_type">
+        <option value="disabled selected hidden"></option>
+        <option>Books</option>
+        <option>Movies</option>
+        <option>Games</option>
+      </select>
+
+      <label>What’s your hidden talent?</label>
+      <input type="text" name="hidden_talent">
+
+      <label>Can you sing or dance?</label>
+      <select name="sing_dance">
+        <option value="disabled selected hidden"></option>
+        <option>Yes - Sing</option>
+        <option>Yes - Dance</option>
+        <option>Both</option>
+        <option>No</option>
+      </select>
+
+      <label>What language(s) can you speak fluently?</label>
+      <input type="text" name="languages_spoken">
+
+      <label>Any hobbies people don’t know about?</label>
+      <textarea name="secret_hobbies" rows="4"></textarea>
+
+      <label>Are you interested in:</label>
+      <select name="interests">
+        <option value="disabled selected hidden"></option>
+        <option>Tech</option>
+        <option>Design</option>
+        <option>Art</option>
+        <option>Writing</option>
+        <option>Photography</option>
+        <option>None of these</option>
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+</html>
